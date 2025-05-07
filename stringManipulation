@@ -1,0 +1,19 @@
+package classes;
+
+public class stringManipulation {
+
+	public static void main(String[] args) {
+		String str=new String("Welcome to mysuru"); 
+		System.out.println("The length of string is : "+str.length()); 
+		System.out.println("The character at index 5 is : "+str.charAt(5)); 
+		System.out.println("The index of character 'j'is : "+str.indexOf('u')); 
+		System.out.println("converted to lowercase is : "+str.toLowerCase()); 
+		System.out.println("converted to uppercase is : "+str.toUpperCase());
+		System.out.println("to check if the string is equal to'Welcome' : "+str.equals("Welcome"));
+		System.out.println("concat string with hello : "+str.concat(" hello")); 
+		System.out.println("The sub string from index 7 is : "+str.substring(7)); 
+		System.out.println("The sub string from index 3to10 : "+str.substring(3,10));
+
+	}
+
+}
