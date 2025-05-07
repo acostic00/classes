@@ -1,0 +1,28 @@
+package classes;
+interface Shape{
+	public abstract void area ();
+}
+class rectangle implements Shape{ 
+		public void area() {
+	    int l= 3; 
+		int b= 4;
+		int ans = l*b; 
+		System.out.println("The area of rectangle is : " + ans);
+		}
+}
+class circle implements Shape{ 
+		public void area() {
+				float r = 10.4f; 
+				float ans = 3.14f*r*r; 
+				System.out.println("The area of circle is : " + ans);
+		}
+}
+public class OCP extends circle {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		rectangle ob1 = new rectangle();
+		ob1.area();
+		circle ob2 = new circle();
+		ob2.area();
+	}
+}
