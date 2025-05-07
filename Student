@@ -1,0 +1,35 @@
+package classes;
+class person{
+	String name;
+	int age;
+	char gender;
+	void setp(String n,int a,char g) {
+		name=n;
+		age=a;
+		gender=g;
+	}
+	void displayp(){
+		System.out.println("Name is : "+name);
+		System.out.println("Age is : "+age);
+		System.out.println("Gender is : "+gender);
+	}
+}
+public class Student extends person {
+	int RegNo;
+	String Dept;
+	void sets(int r,String d) {
+		RegNo=r;
+		Dept=d;
+	}
+	void displays() {
+		System.out.println("Register Number is : "+RegNo);
+		System.out.println("Department is : "+Dept);
+	}
+	public static void main(String[] args) {
+		Student ob = new Student();
+		ob.setp("Praful Jain P", 20, 'M');
+		ob.sets(402, "CSE(AI)");
+		ob.displayp();
+		ob.displays();
+	}
+}
