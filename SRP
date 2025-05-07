@@ -1,0 +1,36 @@
+package classes;
+
+public class SRP {
+	int n1,n2,ans;
+	void set(int x,int y) {
+		n1=x;
+		n2=y;
+	}
+	void add() {
+		ans=n1+n2;
+		System.out.println("The sum is : "+ans);
+	}
+	void sub() {
+		ans=n1-n2;
+		System.out.println("The difference is : "+ans);
+	}
+	void mul() {
+		ans=n1*n2;
+		System.out.println("The product is : "+ans);
+	}
+	void div() {
+		ans=n1/n2;
+		System.out.println("The quotient is : ");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SRP ob1 = new SRP();
+		ob1.set(20, 30);
+		ob1.add();
+		ob1.sub();
+		ob1.mul();
+		ob1.div();
+
+	}
+}
